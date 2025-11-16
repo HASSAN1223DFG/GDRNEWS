@@ -495,3 +495,293 @@ ${message}
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خبر تفصيلي - GDR News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-top">
+        <div class="logo">GDR <span>News</span></div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="index.html">الأخبار</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container article-page">
+    <article class="article-full">
+        <span class="badge">تقنية</span>
+        <h1 class="article-title">عنوان الخبر التفصيلي هنا</h1>
+        <div class="news-meta">اليوم • قسم التقنية</div>
+
+        <!-- إذا تريد صورة للخبر -->
+        <!-- <img src="images/article-1.jpg" alt="صورة الخبر" class="article-image"> -->
+
+        <p class="article-text">
+            هنا النص التفصيلي للخبر. يمكنك كتابة عدة فقرات تتضمن شرح كامل للحدث، التفاصيل، الخلفية،
+            والتحليلات. هذا مجرد مثال يمكن استبداله بسهولة بالنص الحقيقي.
+        </p>
+
+        <p class="article-text">
+            يمكنك أيضاً إضافة اقتباسات، أو نقاط رئيسية، مثل:
+        </p>
+
+        <ul class="article-list">
+            <li>تفصيل أول مهم في الخبر.</li>
+            <li>تفصيل آخر يشرح سبب أهمية هذا الخبر.</li>
+            <li>معلومة إضافية تعطي قيمة للقارئ.</li>
+        </ul>
+
+        <p class="article-text">
+            في النهاية، يمكنك ختم الخبر بخلاصة سريعة أو تنبيه للقارئ عن الأخبار القادمة.
+        </p>
+    </article>
+
+    <aside class="sidebar">
+        <h3 class="section-title">أخبار ذات صلة</h3>
+        <div class="side-card">
+            <h4>خبر تقني آخر يهم القارئ</h4>
+            <span class="side-time">منذ ساعتين</span>
+        </div>
+        <div class="side-card">
+            <h4>تقرير عن مستقبل الذكاء الاصطناعي</h4>
+            <span class="side-time">اليوم</span>
+        </div>
+    </aside>
+</main>
+
+<footer class="site-footer">
+    جميع الحقوق محفوظة &copy; <span id="year"></span> - موقع GDR News
+</footer>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
+/* ================================
+   🔥 خلفية نيون متحركة احترافية
+   ================================ */
+body {
+    font-family: "Cairo", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: radial-gradient(circle at top, #1e293b 0, #020617 45%, #000000 100%);
+    background-size: 300% 300%;
+    animation: neonMove 10s infinite alternate ease-in-out;
+    color: #e5e7eb;
+    margin: 0;
+    padding: 0;
+    line-height: 1.9;
+}
+
+@keyframes neonMove {
+    0% { background-position: 0% 0%; }
+    25% { background-position: 50% 25%; }
+    50% { background-position: 100% 50%; }
+    75% { background-position: 50% 75%; }
+    100% { background-position: 0% 100%; }
+}
+
+/* ================================
+   🔵 الهيدر
+   ================================ */
+header {
+    background: #020617dd;
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid #1f2937;
+    padding: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.header-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 1.6rem;
+    color: #38bdf8;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #e5e7eb;
+    font-size: 1rem;
+    margin-right: 6px;
+}
+
+.tagline {
+    font-size: 0.8rem;
+    color: #9ca3af;
+}
+
+.search-box {
+    margin-top: 8px;
+    max-width: 1100px;
+    margin-inline: auto;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 9px 13px;
+    border-radius: 999px;
+    border: 1px solid #1f2937;
+    background: #020617;
+    color: #e5e7eb;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+.search-box input::placeholder {
+    color: #6b7280;
+}
+
+/* ================================
+   📄 تخطيط الصفحة
+   ================================ */
+.container {
+    max-width: 1100px;
+    margin: 18px auto 24px;
+    padding: 0 12px 18px;
+}
+
+.section-title {
+    font-size: 1rem;
+    margin-bottom: 12px;
+    padding-right: 10px;
+    border-right: 3px solid #38bdf8;
+    color: #f9fafb;
+}
+
+.articles-wrapper {
+    display: grid;
+    grid-template-columns: minmax(0, 3fr) minmax(260px, 1fr);
+    gap: 20px;
+}
+
+.articles-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* ================================
+   📰 المقالات
+   ================================ */
+.article {
+    background: #020617f0;
+    border-radius: 14px;
+    border: 1px solid #1f2937;
+    padding: 16px 18px;
+    box-shadow: 0 10px 30px rgba(15,23,42,0.8);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.article:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 40px rgba(15,23,42,1);
+    border-color: #38bdf8;
+}
+
+.article h2 {
+    font-size: 1.05rem;
+    margin-bottom: 6px;
+    color: #e5e7eb;
+}
+
+.meta {
+    font-size: 0.8rem;
+    color: #9ca3af;
+    margin-bottom: 10px;
+}
+
+.badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: #38bdf8;
+    color: #020617;
+    font-weight: 600;
+    margin-left: 6px;
+}
+
+.article p {
+    font-size: 0.9rem;
+    color: #e5e7eb;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+/* ================================
+   📌 الشريط الجانبي
+   ================================ */
+.sidebar {
+    background: #020617f0;
+    border-radius: 14px;
+    border: 1px solid #1f2937;
+    padding: 14px;
+    height: fit-content;
+}
+
+.side-card {
+    padding: 10px 0;
+    border-bottom: 1px solid #1f2937;
+}
+
+.side-card:last-child {
+    border-bottom: none;
+}
+
+.side-card h4 {
+    font-size: 0.85rem;
+    color: #e5e7eb;
+    margin-bottom: 4px;
+}
+
+.side-time {
+    font-size: 0.75rem;
+    color: #9ca3af;
+}
+
+/* ================================
+   🦶 الفوتر
+   ================================ */
+footer {
+    background: #020617ee;
+    border-top: 1px solid #1f2937;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8rem;
+    color: #9ca3af;
+}
+
+/* ================================
+   📱 التجاوب
+   ================================ */
+@media (max-width: 900px) {
+    .articles-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
