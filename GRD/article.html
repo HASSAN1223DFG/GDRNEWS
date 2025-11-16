@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خبر تفصيلي - GDR News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-top">
+        <div class="logo">GDR <span>News</span></div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="index.html">الأخبار</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container article-page">
+    <article class="article-full">
+        <span class="badge">تقنية</span>
+        <h1 class="article-title">عنوان الخبر التفصيلي هنا</h1>
+        <div class="news-meta">اليوم • قسم التقنية</div>
+
+        <!-- إذا تريد صورة للخبر -->
+        <!-- <img src="images/article-1.jpg" alt="صورة الخبر" class="article-image"> -->
+
+        <p class="article-text">
+            هنا النص التفصيلي للخبر. يمكنك كتابة عدة فقرات تتضمن شرح كامل للحدث، التفاصيل، الخلفية،
+            والتحليلات. هذا مجرد مثال يمكن استبداله بسهولة بالنص الحقيقي.
+        </p>
+
+        <p class="article-text">
+            يمكنك أيضاً إضافة اقتباسات، أو نقاط رئيسية، مثل:
+        </p>
+
+        <ul class="article-list">
+            <li>تفصيل أول مهم في الخبر.</li>
+            <li>تفصيل آخر يشرح سبب أهمية هذا الخبر.</li>
+            <li>معلومة إضافية تعطي قيمة للقارئ.</li>
+        </ul>
+
+        <p class="article-text">
+            في النهاية، يمكنك ختم الخبر بخلاصة سريعة أو تنبيه للقارئ عن الأخبار القادمة.
+        </p>
+    </article>
+
+    <aside class="sidebar">
+        <h3 class="section-title">أخبار ذات صلة</h3>
+        <div class="side-card">
+            <h4>خبر تقني آخر يهم القارئ</h4>
+            <span class="side-time">منذ ساعتين</span>
+        </div>
+        <div class="side-card">
+            <h4>تقرير عن مستقبل الذكاء الاصطناعي</h4>
+            <span class="side-time">اليوم</span>
+        </div>
+    </aside>
+</main>
+
+<footer class="site-footer">
+    جميع الحقوق محفوظة &copy; <span id="year"></span> - موقع GDR News
+</footer>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
